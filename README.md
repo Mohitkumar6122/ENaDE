@@ -7,6 +7,5 @@ Working of Algorithm :
 
 
 # Contributors
- Aayush Jaggi
  Harbhajan Singh
  
