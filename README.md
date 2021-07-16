@@ -13,7 +13,9 @@ complete binary tree, reversing the alternate levels and level order traversal.
 
 ![Table](https://i.ibb.co/Yh6KSSt/Screenshot-from-2020-09-20-23-55-54.png)
 
-
+# Future updates to the algorithm
+In the first level of encryption, other basic arithmetic operations can be used. Operations like mirroring can be
+implemented on binary tree to further increase the security in the second level encryption
 # Contributors
  Harbhajan Singh
  
