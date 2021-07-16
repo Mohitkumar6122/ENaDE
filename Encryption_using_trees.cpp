@@ -84,6 +84,7 @@ string encryption_algo(string key)
 	key = level_two_encryption(key);
 	return key;
 }
+
 // performs decryption
 string decryption_algo(string text)
 {
@@ -96,13 +97,13 @@ string decryption_algo(string text)
 // returns Intermediate Cipher text
 string level_one_encryption(string s)
 {
-	int len = s.length();
+	int len = s.size();
 	for (int i = 0; i < len; i++)
 	{
 		if (i & 1)
-			s[i] = char(int(s[i]) + i);
+			s[i] = (char)(int(s[i]) + i);
 		else
-			s[i] = char(int(s[i]) + i + 2);
+			s[i] = (char)(int(s[i]) + i + 2);
 	}
 	return s;
 }
@@ -173,8 +174,8 @@ void reverse_alternate_levels(Node *root)
 	{
 		Node *node = q.front();
 		q.pop();
-		if (node->left && node->right)
-			swap(node->left->data, node->right->data);
+		//  actually swapping nodes not just the data
+		swap(node->left, node->right);
 		if (node->left)
 			q.push(node->left);
 		if (node->right)
